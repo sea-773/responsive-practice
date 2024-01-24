@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-size{
+  width: 400px;
+  height: 400px;
+  background: #ff0000;
+}
+
+.box-color{
+  background: #ff0000;
+  width: 300px; 
+  height: 300px; 
+}
+
+.content1{
+  display: flex; 
+}
+
+.blue-box-margin,.green-box-margin{
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+}
+
+.blue-box-margin{
+  background: #0008ff;
+  margin-right: 150px;
+}
+
+.green-box-margin{
+  background: #22ff00;
+} 
+
+.red-box-float,.blue-box-float{
+  width: 300px; 
+  height: 300px; 
+  float: left;
+}
+
+.red-box-float{
+  background: #ff0000;
+}
+
+.blue-box-float{
+  background: #0008ff;
+}
+
+.content3{
+  display: flex; 
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+}
+
+.red-box-reverse, .blue-box-reverse, .orange-box-reverse{
+  width: 300px; 
+  height: 300px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red-box-reverse{
+  background: #ff0000;
+}
+
+.blue-box-reverse{
+  background:  #0008ff;
+}
+
+.orange-box-reverse{
+  background: #ff8400;
+}
+
+.content3 div > span{
+  display: block;
+  text-align: center;
+  line-height: 300px;
+}
+
+.content4{
+  display: flex;
+}
+
+.green-box-order, .yellow-box-order, .pink-box-order{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px; 
+  height: 300px; 
+}
+
+.green-box-order{
+  background: #00ff51;
+}
+
+.yellow-box-order{
+  background: #d4ff00
+}
+
+.pink-box-order{
+  background: #ff00e1;
+}
+
+.content4 div > span{
+  display: block;
+  text-align: center;
+  line-height: 300px;
+}
+
+.content5{
+  display: flex;
+}
+
+.red-box-flex, .green-box-flex, .blue-box-flex{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red-box-flex{
+  background-color: #ff0000;
+}
+
+.blue-box-flex{
+  background-color: #0008ff;
+  display: none;
+}
+
+.green-box-flex{
+  background-color: #00ff51;
+}
+
+@media screen and (max-width:960px){
+  .box-size{
+    width: 200px;
+    height: 200px;
+  }
+
+  .box-color{
+    background: #007bff;
+  }
+
+  .blue-box-margin{
+    margin-right: 50px;
+  }
+
+  .red-box-float, .blue-box-float{
+    float: none;
+  }
+
+  .content3{
+    flex-direction:row-reverse;   
+  }
+
+  .green-box-order{
+    order: 2;
+  }  
+  .yellow-box-order{
+    order: 3;
+  }
+  .pink-box-order{
+    order: 1;
+  }
+
+  .red-box-flex{
+    display: none;
+  }
+  
+  .blue-box-flex{
+    display: flex;
+  }
+}
+
