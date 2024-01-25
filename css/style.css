@@ -38,6 +38,12 @@
   background: #22ff00;
 } 
 
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .red-box-float,.blue-box-float{
   width: 300px; 
   height: 300px; 
@@ -98,14 +104,17 @@
 }
 
 .green-box-order{
+  order: 1;
   background: #00ff51;
 }
 
 .yellow-box-order{
+  order: 2;
   background: #d4ff00
 }
 
 .pink-box-order{
+  order: 3;
   background: #ff00e1;
 }
 
@@ -119,24 +128,22 @@
   display: flex;
 }
 
-.red-box-flex, .green-box-flex, .blue-box-flex{
+.red-box-display, .green-box-display, .blue-box-display{
   width: 300px;
   height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
 }
 
-.red-box-flex{
+.red-box-display{
   background-color: #ff0000;
 }
 
-.blue-box-flex{
+.blue-box-display{
   background-color: #0008ff;
   display: none;
 }
 
-.green-box-flex{
+.green-box-display{
   background-color: #00ff51;
 }
 
@@ -172,12 +179,14 @@
     order: 1;
   }
 
-  .red-box-flex{
+  .red-box-display{
     display: none;
   }
-  
-  .blue-box-flex{
-    display: flex;
+
+  .blue-box-display{
+    display: block; 
   }
+
+
 }
 
